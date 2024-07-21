@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Victor+Mono:wght@500&display=swap");
+
+.custom-datepicker {
+  background-color: #e8f0fe !important;
+  border-radius: 4px;
+  height: 40px;
+  color: black !important;
+  border-color: rgb(0, 0, 0) !important;
+}
+
+.custom-datepicker .react-datepicker__input-container input {
+  color: white;
+}
+
+.date-picker-hyphen {
+  margin: 0 5px;
+  color: #333;
+}
