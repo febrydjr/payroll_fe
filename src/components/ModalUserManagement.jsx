@@ -22,7 +22,7 @@ const ModalUserManagement = ({ isOpen, onClose }) => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
   const [isAddEmployeeOpen, setIsAddEmployeeOpen] = useState(false);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
   useEffect(() => {
     const fetchUserData = async () => {
       try {

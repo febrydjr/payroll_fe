@@ -49,7 +49,7 @@ const Employee = () => {
   const toast = useToast();
   const navigate = useNavigate();
   const [isPayrollModalOpen, setIsPayrollModalOpen] = useState(false);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
 
   const openPayrollModal = () => {
     setIsPayrollModalOpen(true);

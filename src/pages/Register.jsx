@@ -19,7 +19,7 @@ const Register = () => {
   const toast = useToast();
   const [token, setToken] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
   useEffect(() => {
     const url = window.location.href.split("/");
     const extractedToken = url[url.length - 1];

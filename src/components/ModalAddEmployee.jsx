@@ -18,7 +18,7 @@ const ModalAddEmployee = ({ isOpen, onClose }) => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);

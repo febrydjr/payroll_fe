@@ -31,7 +31,7 @@ const ModalGetAttendance = ({ isOpen, onClose }) => {
   const [endDate, setEndDate] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(20);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
 
   const sortedAttendanceData = [...filteredAttendanceData].sort(
     (a, b) => new Date(b.date) - new Date(a.date)

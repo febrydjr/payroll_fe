@@ -19,7 +19,7 @@ import jwt_decode from "jwt-decode";
 const ModalPayroll = ({ isOpen, onClose }) => {
   const [payrollData, setPayrollData] = useState({});
   const [time, setTime] = useState("month");
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
   const userToken = localStorage.getItem("token");
   const decoded = jwt_decode(userToken);
   const userId = decoded.user_id;

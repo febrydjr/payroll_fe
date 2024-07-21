@@ -28,7 +28,7 @@ const validationSchema = Yup.object().shape({
 });
 
 const Login = () => {
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
   const toast = useToast();
   const navigate = useNavigate();
   useEffect(() => {

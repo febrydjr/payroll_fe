@@ -17,7 +17,7 @@ import axios from "axios";
 const ModalSalaryManagement = ({ isOpen, onClose }) => {
   const [users, setUsers] = useState([]);
   const [error, setError] = useState(null);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
   useEffect(() => {
     const fetchUserData = async () => {
       try {
@@ -84,9 +84,7 @@ const ModalSalaryManagement = ({ isOpen, onClose }) => {
                   <chakra.span>
                     {formatCurrency(user.Salary.monthly_salary)}
                   </chakra.span>
-                  <chakra.span>
-                    {formatCurrency(user.total_salary)}  
-                  </chakra.span>
+                  <chakra.span>{formatCurrency(user.total_salary)}</chakra.span>
                 </SimpleGrid>
               ))}
             </Flex>

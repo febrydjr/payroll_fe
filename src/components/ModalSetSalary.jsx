@@ -27,7 +27,7 @@ const ModalSetSalary = ({ isOpen, onClose }) => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState(null);
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://payroll-be.vercel.app";
 
   useEffect(() => {
     const fetchUsernames = async () => {
